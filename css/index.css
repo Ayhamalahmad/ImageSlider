@@ -1,0 +1,118 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* Start  Container */
+  .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  /*small*/
+  @media (max-width: 767px) {
+      .container {
+          width: 100%;
+      }
+
+  }
+
+  @media (min-width: 768px) {
+      .container {
+          width: 750px;
+      }
+
+  }
+
+  /*Medium*/
+  @media (min-width: 992px) {
+      .container {
+          width: 750px;
+      }
+  }
+
+  /*Large*/
+  @media (min-width: 1200px) {
+      .container {
+          width: 1170px;
+      }
+  }
+
+  /* End  Container */
+
+  /* Start Silder */
+  /* Start Slider Container */
+  .slider-container {
+      margin: 10px auto;
+      width: 800px;
+      height: 250px;
+      position: relative;
+  }
+
+  .slider-container .img-number {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      background-color: rgba(0, 0, 0, .6);
+      color: #FFF;
+      padding: 5px 10px;
+      font-size: 20px;
+      z-index: 2;
+      border-radius: 6px;
+  }
+
+  .slider-container img {
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s;
+      z-index: 1;
+  }
+
+  .slider-container img.active {
+      opacity: 1;
+  }
+
+  /* End Slider Container */
+  /* Start Silder Controls */
+  .silder-controls {
+      width: 800px;
+      margin: auto;
+      overflow: hidden;
+  }
+
+  .silder-controls .prev,
+  .silder-controls .next {
+      background-color: #009688;
+      color: #FFF;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 5px;
+      user-select: none;
+      width: 20%;
+  }
+
+  .silder-controls .prev {
+      float: left;
+  }
+
+  .silder-controls .next {
+      float: right;
+  }
+  .silder-controls .prev.disabled,
+  .silder-controls .next.disabled  {
+    background-color: rgba(0, 150, 136, 0.5);
+  cursor: no-drop;
+  }
+  .silder-controls .ind {
+    width: 60%;
+    float: left;
+  }
+
+
+  /* Start Silder Controls */
+  /* End Silder */
