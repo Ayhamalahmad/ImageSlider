@@ -108,11 +108,32 @@
     background-color: rgba(0, 150, 136, 0.5);
   cursor: no-drop;
   }
-  .silder-controls .ind {
+  .silder-controls .signs {
     width: 60%;
     float: left;
   }
 
+  .slider-controls .signs ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  .slider-controls .signs ul li {
+    display: inline-block;
+    background-color: #F6F6F6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+  .slider-controls .signs ul li.active {
+    background-color: #009688;
+    color: #FFF;
+  }
 
   /* Start Silder Controls */
   /* End Silder */
