@@ -46,10 +46,10 @@
   /* Start Silder */
   /* Start Slider Container */
   .slider-container {
-      margin: 10px auto;
-      width: 800px;
-      height: 250px;
-      position: relative;
+    margin: 10px auto;
+    width: 800px;
+    height: 250px;
+    position: relative;
   }
 
   .slider-container .img-number {
@@ -69,6 +69,7 @@
       opacity: 0;
       transition: opacity 1s;
       z-index: 1;
+      width: 100%;
   }
 
   .slider-container img.active {
@@ -77,14 +78,14 @@
 
   /* End Slider Container */
   /* Start Silder Controls */
-  .silder-controls {
+  .slider-controls {
       width: 800px;
       margin: auto;
       overflow: hidden;
   }
 
-  .silder-controls .prev,
-  .silder-controls .next {
+  .slider-controls .prev,
+  .slider-controls .next {
       background-color: #009688;
       color: #FFF;
       font-size: 16px;
@@ -96,19 +97,19 @@
       width: 20%;
   }
 
-  .silder-controls .prev {
+  .slider-controls .prev {
       float: left;
   }
 
-  .silder-controls .next {
+  .slider-controls .next {
       float: right;
   }
-  .silder-controls .prev.disabled,
-  .silder-controls .next.disabled  {
+  .slider-controls .prev.disabled,
+  .slider-controls .next.disabled  {
     background-color: rgba(0, 150, 136, 0.5);
   cursor: no-drop;
   }
-  .silder-controls .signs {
+  .slider-controls .signs {
     width: 60%;
     float: left;
   }
