@@ -182,7 +182,7 @@
       margin: 0;
       text-align: center;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 767px) {
     .slider-controls .signs ul {
         display: none;
     }
