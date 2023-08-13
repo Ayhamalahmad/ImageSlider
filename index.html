@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Image Slider</title>
   </head>
@@ -15,7 +16,14 @@
           decoding="async"
           src="imges/hudson-graves-9FP5SRLJJGM-unsplash.jpg"
         />
-        <img class="active" decoding="async" src="imges/karollyne-videira-hubert-TdHGEIPphrg-unsplash.jpg" />
+        <img
+          decoding="async"
+          src="imges/hudson-graves-9FP5SRLJJGM-unsplash.jpg"
+        />
+        <img
+          decoding="async"
+          src="imges/karollyne-videira-hubert-TdHGEIPphrg-unsplash.jpg"
+        />
         <img
           decoding="async"
           src="imges/kevin-seibel-oo6XOGrSyX8-unsplash.jpg"
@@ -24,11 +32,15 @@
           decoding="async"
           src="imges/rick-rothenberg-syGRpA2RCeA-unsplash.jpg"
         />
+       
       </div>
       <div class="slider-controls">
-        <span id="prev" class="prev">previous</span>
+          <span id="prev" class="prev">
+            <i class="fas fa-arrow-circle-left"></i>
+          </span>
         <span id="signs" class="signs"></span>
-        <span id="next" class="next">next</span>
+
+          <span id="next" class="next"><i class="fas fa-arrow-circle-right"></i></span>
       </div>
     </div>
     <script src="javascript/index.js"></script>
